@@ -1,0 +1,677 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SecondCard should render second card 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "paddingHorizontal": 20,
+      },
+    ]
+  }
+>
+  <View
+    flex={2}
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 2,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexGrow": 1,
+          "height": "30%",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <View>
+      undefined-Lottie-Mock
+    </View>
+  </View>
+  <View
+    flex={1}
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  />
+  <Text
+    fontSize={28}
+    style={
+      Array [
+        Object {
+          "color": "#161617",
+          "fontFamily": "Montserrat-Black",
+          "fontSize": 28,
+          "lineHeight": 36,
+        },
+        Object {
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Des offres pour tous
+  </Text>
+  <Text
+    fontSize={24}
+    style={
+      Array [
+        Object {
+          "color": "#161617",
+          "fontFamily": "Montserrat-Medium",
+          "fontSize": 24,
+          "lineHeight": 28,
+        },
+        Object {
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    et si tu as...
+  </Text>
+  <View
+    flex={0.5}
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 0.5,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  />
+  <View
+    numberOfSpaces={4}
+    style={
+      Array [
+        Object {
+          "height": 16,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <View
+      flex={0.5}
+      style={
+        Array [
+          Object {
+            "flexBasis": 0,
+            "flexGrow": 0.5,
+            "flexShrink": 1,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "column",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#320096",
+              "borderRadius": 4,
+              "height": 20,
+              "justifyContent": "center",
+              "paddingHorizontal": 0,
+              "paddingVertical": 0,
+              "transform": Array [
+                Object {
+                  "rotate": "-4.34deg",
+                },
+              ],
+              "width": 43,
+            },
+          ]
+        }
+        tagHeight={20}
+        tagWidth={43}
+        testID="Aide financière 15 ans"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#ffffff",
+                "fontFamily": "Montserrat-SemiBold",
+                "fontSize": 12,
+                "lineHeight": 16,
+                "transform": Array [
+                  Object {
+                    "rotate": "4.34deg",
+                  },
+                ],
+              },
+            ]
+          }
+        >
+          20€
+        </Text>
+      </View>
+      <View
+        numberOfSpaces={1}
+        style={
+          Array [
+            Object {
+              "height": 4,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "color": "#161617",
+              "fontFamily": "Montserrat-SemiBold",
+              "fontSize": 12,
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        15 ans
+      </Text>
+    </View>
+    <View
+      flex={0.25}
+      style={
+        Array [
+          Object {
+            "flexBasis": 0,
+            "flexGrow": 0.25,
+            "flexShrink": 1,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "column",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#320096",
+              "borderRadius": 4,
+              "height": 20,
+              "justifyContent": "center",
+              "paddingHorizontal": 0,
+              "paddingVertical": 0,
+              "transform": Array [
+                Object {
+                  "rotate": "-4.34deg",
+                },
+              ],
+              "width": 43,
+            },
+          ]
+        }
+        tagHeight={20}
+        tagWidth={43}
+        testID="Aide financière 16 ans"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#ffffff",
+                "fontFamily": "Montserrat-SemiBold",
+                "fontSize": 12,
+                "lineHeight": 16,
+                "transform": Array [
+                  Object {
+                    "rotate": "4.34deg",
+                  },
+                ],
+              },
+            ]
+          }
+        >
+          30€
+        </Text>
+      </View>
+      <View
+        numberOfSpaces={1}
+        style={
+          Array [
+            Object {
+              "height": 4,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "color": "#161617",
+              "fontFamily": "Montserrat-SemiBold",
+              "fontSize": 12,
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        16 ans
+      </Text>
+    </View>
+    <View
+      flex={0.25}
+      style={
+        Array [
+          Object {
+            "flexBasis": 0,
+            "flexGrow": 0.25,
+            "flexShrink": 1,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "column",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#320096",
+              "borderRadius": 4,
+              "height": 20,
+              "justifyContent": "center",
+              "paddingHorizontal": 0,
+              "paddingVertical": 0,
+              "transform": Array [
+                Object {
+                  "rotate": "-4.34deg",
+                },
+              ],
+              "width": 43,
+            },
+          ]
+        }
+        tagHeight={20}
+        tagWidth={43}
+        testID="Aide financière 17 ans"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#ffffff",
+                "fontFamily": "Montserrat-SemiBold",
+                "fontSize": 12,
+                "lineHeight": 16,
+                "transform": Array [
+                  Object {
+                    "rotate": "4.34deg",
+                  },
+                ],
+              },
+            ]
+          }
+        >
+          30€
+        </Text>
+      </View>
+      <View
+        numberOfSpaces={1}
+        style={
+          Array [
+            Object {
+              "height": 4,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "color": "#161617",
+              "fontFamily": "Montserrat-SemiBold",
+              "fontSize": 12,
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        17 ans
+      </Text>
+    </View>
+    <View
+      flex={0.25}
+      style={
+        Array [
+          Object {
+            "flexBasis": 0,
+            "flexGrow": 0.25,
+            "flexShrink": 1,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "column",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#320096",
+              "borderRadius": 4,
+              "height": 20,
+              "justifyContent": "center",
+              "paddingHorizontal": 0,
+              "paddingVertical": 0,
+              "transform": Array [
+                Object {
+                  "rotate": "-4.34deg",
+                },
+              ],
+              "width": 43,
+            },
+          ]
+        }
+        tagHeight={20}
+        tagWidth={43}
+        testID="Aide financière 18 ans"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#ffffff",
+                "fontFamily": "Montserrat-SemiBold",
+                "fontSize": 12,
+                "lineHeight": 16,
+                "transform": Array [
+                  Object {
+                    "rotate": "4.34deg",
+                  },
+                ],
+              },
+            ]
+          }
+        >
+          300€
+        </Text>
+      </View>
+      <View
+        numberOfSpaces={1}
+        style={
+          Array [
+            Object {
+              "height": 4,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "color": "#161617",
+              "fontFamily": "Montserrat-SemiBold",
+              "fontSize": 12,
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        18 ans
+      </Text>
+    </View>
+    <View
+      flex={0.5}
+      style={
+        Array [
+          Object {
+            "flexBasis": 0,
+            "flexGrow": 0.5,
+            "flexShrink": 1,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    numberOfSpaces={5}
+    style={
+      Array [
+        Object {
+          "height": 20,
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#161617",
+          "fontFamily": "Montserrat-Regular",
+          "fontSize": 15,
+          "lineHeight": 20,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    de 15 à 18 ans : le Gouvernement offre un crédit à dépenser dans l’application.
+  </Text>
+  <View
+    flex={2}
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 2,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  />
+  <View
+    paddingBottom={40}
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "flex-end",
+          "paddingBottom": 40,
+        },
+      ]
+    }
+  >
+    <View
+      forwardedRef={[Function]}
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Continuer"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#eb0055",
+            "borderRadius": 24,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "maxWidth": 500,
+            "minHeight": 40,
+            "opacity": 1,
+            "paddingBottom": 2,
+            "paddingLeft": 2,
+            "paddingRight": 2,
+            "paddingTop": 2,
+            "width": "100%",
+          }
+        }
+        testID="Continuer"
+      >
+        <Text
+          adjustsFontSizeToFit={false}
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Montserrat-Bold",
+                "fontSize": 15,
+                "lineHeight": 20,
+                "marginLeft": 0,
+                "maxWidth": "100%",
+              },
+            ]
+          }
+        >
+          Continuer
+        </Text>
+      </View>
+    </View>
+    <View
+      marginTop={16}
+      style={
+        Array [
+          Object {
+            "flexGrow": 1,
+            "marginTop": 16,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="Passer"
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#ffffff",
+            "borderRadius": 24,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "maxWidth": 500,
+            "minHeight": 40,
+            "opacity": 1,
+            "paddingBottom": 2,
+            "paddingLeft": 2,
+            "paddingRight": 2,
+            "paddingTop": 2,
+            "width": "100%",
+          }
+        }
+        testID="Passer"
+      >
+        <Text
+          adjustsFontSizeToFit={false}
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#eb0055",
+                "fontFamily": "Montserrat-Bold",
+                "fontSize": 15,
+                "lineHeight": 20,
+                "marginLeft": 0,
+                "maxWidth": "100%",
+              },
+            ]
+          }
+        >
+          Passer
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

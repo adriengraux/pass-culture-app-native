@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OfferCategory renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+>
+  <View
+    className="sc-bdvvtL fuZyMx"
+  >
+    <View
+      height={32}
+      width={32}
+    >
+      <Text>
+        undefined-SVG-Mock
+      </Text>
+    </View>
+  </View>
+  <View
+    numberOfSpaces={2}
+    style={
+      Array [
+        Object {
+          "height": 8,
+        },
+      ]
+    }
+  />
+  <Text
+    className="sc-gsDKAQ dZPdWA"
+    testID="caption-undefined"
+  >
+    Livre ou carte lecture
+  </Text>
+</View>
+`;

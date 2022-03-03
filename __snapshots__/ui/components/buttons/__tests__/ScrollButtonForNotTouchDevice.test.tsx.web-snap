@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ScrollButtonForNotTouchDevice /> should render correctly on left direction 1`] = `
+<button
+  aria-describedby="voir les propositions précédentes"
+  className="sc-bdvvtL bzaTwO"
+  tabIndex="-1"
+  type="button"
+/>
+`;
+
+exports[`<ScrollButtonForNotTouchDevice /> should render correctly on right direction 1`] = `
+<button
+  aria-describedby="voir les propositions suivantes"
+  className="sc-bdvvtL lkYAyW"
+  tabIndex="-1"
+  type="button"
+/>
+`;
+
+exports[`<ScrollButtonForNotTouchDevice /> should render correctly when no top given 1`] = `
+<button
+  aria-describedby="voir les propositions suivantes"
+  className="sc-bdvvtL gmRGzD"
+  tabIndex="-1"
+  type="button"
+/>
+`;

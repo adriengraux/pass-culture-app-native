@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextInput /> should render correctly when NOT focused 1`] = `
+<View
+  height="small"
+  isError={false}
+  isFocus={false}
+  isInputDisabled={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderColor": "#CBCDD2",
+        "borderRadius": 22,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "height": 40,
+        "paddingBottom": 4,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 4,
+        "shadowColor": "#161617",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.15,
+        "shadowRadius": 6,
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <TextInput
+    editable={true}
+    nativeID="testUuidV4"
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    placeholder="placeholder"
+    placeholderTextColor="#696A6F"
+    style={
+      Array [
+        Object {
+          "color": "#161617",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "fontFamily": "Montserrat-Regular",
+          "fontSize": 15,
+          "height": "100%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`<TextInput /> should render correctly when focused 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -1,16 +1,16 @@
+  <View
+    height=\\"small\\"
+    isError={false}
+-   isFocus={false}
++   isFocus={true}
+    isInputDisabled={false}
+    style={
+      Array [
+        Object {
+          \\"alignItems\\": \\"center\\",
+          \\"backgroundColor\\": \\"#ffffff\\",
+-         \\"borderColor\\": \\"#CBCDD2\\",
++         \\"borderColor\\": \\"#eb0055\\",
+          \\"borderRadius\\": 22,
+          \\"borderStyle\\": \\"solid\\",
+          \\"borderWidth\\": 1,
+          \\"flexDirection\\": \\"row\\",
+          \\"height\\": 40,"
+`;
+
+exports[`<TextInput /> should render correctly when in error 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -1,16 +1,16 @@
+  <View
+    height=\\"small\\"
+-   isError={false}
++   isError={true}
+    isFocus={false}
+    isInputDisabled={false}
+    style={
+      Array [
+        Object {
+          \\"alignItems\\": \\"center\\",
+          \\"backgroundColor\\": \\"#ffffff\\",
+-         \\"borderColor\\": \\"#CBCDD2\\",
++         \\"borderColor\\": \\"#b60025\\",
+          \\"borderRadius\\": 22,
+          \\"borderStyle\\": \\"solid\\",
+          \\"borderWidth\\": 1,
+          \\"flexDirection\\": \\"row\\",
+          \\"height\\": 40,"
+`;

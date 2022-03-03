@@ -1,0 +1,839 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OfferHeader /> should render correctly 1`] = `
+Array [
+  <View
+    safeAreaTop={16}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0)",
+        "height": 80,
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+        "zIndex": 1,
+      }
+    }
+  >
+    <View
+      customHeight={16}
+      enable={true}
+      style={
+        Array [
+          Object {
+            "height": 16,
+          },
+        ]
+      }
+    />
+    <View
+      numberOfSpaces={2}
+      style={
+        Array [
+          Object {
+            "height": 8,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexBasis": 0,
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+        ]
+      }
+    >
+      <View
+        numberOfSpaces={6}
+        style={
+          Array [
+            Object {
+              "width": 24,
+            },
+          ]
+        }
+      />
+      <View
+        accessibilityLabel="Revenir en arrière"
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="Revenir en arrière"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "rgba(255, 255, 255, 1)",
+              "borderColor": "rgba(241, 241, 244, 1)",
+              "borderRadius": 40,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "justifyContent": "center",
+              "overflow": "hidden",
+              "transform": undefined,
+              "width": 40,
+            }
+          }
+          testID="headerIconRoundContainer"
+        >
+          <View
+            size={24}
+            style={
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "opacity": 1,
+                  "position": "absolute",
+                }
+              }
+              testID="initial-icon-container"
+            >
+              <View
+                height={24}
+                testID="icon-back"
+                width={24}
+              >
+                <Text>
+                  icon-back-SVG-Mock
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "opacity": 0,
+                  "position": "absolute",
+                }
+              }
+              testID="final-icon-container"
+            >
+              <View
+                height={24}
+                testID="final-icon-back"
+                width={24}
+              >
+                <Text>
+                  final-icon-back-SVG-Mock
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        numberOfSpaces={3}
+        style={
+          Array [
+            Object {
+              "width": 12,
+            },
+          ]
+        }
+      />
+      <View
+        numberOfSpaces={10}
+        style={
+          Array [
+            Object {
+              "width": 40,
+            },
+          ]
+        }
+        testID="leftShareIconPlaceholder"
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+            },
+          ]
+        }
+      />
+      <Text
+        collapsable={false}
+        nativeID="animatedComponent"
+        numberOfLines={2}
+        style={
+          Object {
+            "color": "#ffffff",
+            "flexShrink": 1,
+            "opacity": 0,
+            "textAlign": "center",
+          }
+        }
+        testID="offerHeaderName"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 15,
+                "lineHeight": 20,
+              },
+            ]
+          }
+        >
+          Some very nice offer
+        </Text>
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+            },
+          ]
+        }
+      />
+      <View
+        accessibilityLabel="Partager"
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="Partager"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "rgba(255, 255, 255, 1)",
+              "borderColor": "rgba(241, 241, 244, 1)",
+              "borderRadius": 40,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "justifyContent": "center",
+              "overflow": "hidden",
+              "transform": undefined,
+              "width": 40,
+            }
+          }
+          testID="headerIconRoundContainer"
+        >
+          <View
+            size={24}
+            style={
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "opacity": 1,
+                  "position": "absolute",
+                }
+              }
+              testID="initial-icon-container"
+            >
+              <View
+                fill="#161617"
+                height={24}
+                testID="icon-share"
+                width={24}
+              >
+                <Text>
+                  icon-share-SVG-Mock
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "opacity": 0,
+                  "position": "absolute",
+                }
+              }
+              testID="final-icon-container"
+            >
+              <View
+                fill="#ffffff"
+                height={24}
+                testID="final-icon-share"
+                width={24}
+              >
+                <Text>
+                  final-icon-share-SVG-Mock
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        numberOfSpaces={3}
+        style={
+          Array [
+            Object {
+              "width": 12,
+            },
+          ]
+        }
+      />
+      <View
+        accessibilityLabel="Mettre en favoris"
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="Mettre en favoris"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "rgba(255, 255, 255, 1)",
+              "borderColor": "rgba(241, 241, 244, 1)",
+              "borderRadius": 40,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "justifyContent": "center",
+              "overflow": "hidden",
+              "transform": Array [
+                Object {
+                  "scale": 1,
+                },
+              ],
+              "width": 40,
+            }
+          }
+          testID="headerIconRoundContainer"
+        >
+          <View
+            size={24}
+            style={
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "opacity": 1,
+                  "position": "absolute",
+                }
+              }
+              testID="initial-icon-container"
+            >
+              <View
+                height={24}
+                testID="icon-favorite"
+                width={24}
+              >
+                <Text>
+                  icon-favorite-SVG-Mock
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "opacity": 0,
+                  "position": "absolute",
+                }
+              }
+              testID="final-icon-container"
+            >
+              <View
+                height={24}
+                testID="final-icon-favorite"
+                width={24}
+              >
+                <Text>
+                  final-icon-favorite-SVG-Mock
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        numberOfSpaces={6}
+        style={
+          Array [
+            Object {
+              "width": 24,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      numberOfSpaces={2}
+      style={
+        Array [
+          Object {
+            "height": 8,
+          },
+        ]
+      }
+    />
+  </View>,
+  <Modal
+    animationType="none"
+    deviceHeight={1334}
+    deviceWidth={750}
+    hardwareAccelerated={false}
+    hideModalContentWhileAnimating={false}
+    onBackdropPress={[Function]}
+    onModalHide={[Function]}
+    onModalWillHide={[Function]}
+    onModalWillShow={[Function]}
+    onRequestClose={[Function]}
+    panResponderThreshold={4}
+    scrollHorizontal={false}
+    scrollOffset={0}
+    scrollOffsetMax={0}
+    scrollTo={null}
+    statusBarTranslucent={true}
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
+    swipeThreshold={100}
+    testID="modal"
+    transparent={true}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      forwardedRef={[Function]}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "black",
+          "bottom": 0,
+          "height": 1334,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": 750,
+        }
+      }
+    />
+    <View
+      deviceHeight={1334}
+      deviceWidth={750}
+      forwardedRef={[Function]}
+      hideModalContentWhileAnimating={false}
+      onBackdropPress={[Function]}
+      onModalHide={[Function]}
+      onModalWillHide={[Function]}
+      onModalWillShow={[Function]}
+      panResponderThreshold={4}
+      pointerEvents="box-none"
+      scrollHorizontal={false}
+      scrollOffset={0}
+      scrollOffsetMax={0}
+      scrollTo={null}
+      statusBarTranslucent={true}
+      style={
+        Object {
+          "alignItems": "center",
+          "bottom": 0,
+          "flex": 1,
+          "justifyContent": "center",
+          "left": 0,
+          "margin": "auto",
+          "position": "absolute",
+          "right": 0,
+          "top": "auto",
+          "transform": Array [
+            Object {
+              "translateY": 0,
+            },
+          ],
+        }
+      }
+      supportedOrientations={
+        Array [
+          "portrait",
+          "landscape",
+        ]
+      }
+      swipeThreshold={100}
+    >
+      <View
+        aria-describedby="testUuidV4"
+        height={428}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#ffffff",
+              "borderBottomEndRadius": 0,
+              "borderBottomLeftRadius": 0,
+              "borderBottomRightRadius": 0,
+              "borderBottomStartRadius": 0,
+              "borderTopEndRadius": 16,
+              "borderTopLeftRadius": 20,
+              "borderTopRightRadius": 20,
+              "borderTopStartRadius": 16,
+              "flexDirection": "column",
+              "height": 428,
+              "justifyContent": "center",
+              "maxHeight": 650,
+              "maxWidth": 960,
+              "paddingBottom": 20,
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "paddingTop": 20,
+              "width": "100%",
+            },
+          ]
+        }
+        testID="modalContainer"
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            Array [
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "width": "100%",
+              },
+            ]
+          }
+          testID="modalHeader"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-start",
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 0.1,
+                  "flexShrink": 1,
+                  "justifyContent": "flex-start",
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              Array [
+                Object {
+                  "flexBasis": 0,
+                  "flexGrow": 0.8,
+                  "flexShrink": 1,
+                  "justifyContent": "center",
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "zIndex": 1,
+                },
+              ]
+            }
+          >
+            <Text
+              nativeID="testUuidV4"
+              numberOfLines={3}
+              style={
+                Array [
+                  Object {
+                    "color": "#161617",
+                    "fontFamily": "Montserrat-Medium",
+                    "fontSize": 18,
+                    "lineHeight": 22,
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              Connecte-toi pour profiter de cette fonctionnalité
+            </Text>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-start",
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 0.1,
+                  "flexShrink": 1,
+                  "justifyContent": "flex-end",
+                },
+              ]
+            }
+          >
+            <View
+              accessibilityLabel="Fermer la modale"
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                  "paddingBottom": 4,
+                  "paddingLeft": 4,
+                  "paddingRight": 4,
+                  "paddingTop": 4,
+                }
+              }
+              testID="Fermer la modale"
+            >
+              <View
+                height={20}
+                testID="rightIcon"
+                width={20}
+              >
+                <Text>
+                  rightIcon-SVG-Mock
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "height": 20,
+              },
+            ]
+          }
+        />
+        <View
+          backdropColor="#00000080"
+          paddingBottom={8}
+          style={
+            Array [
+              Object {
+                "maxWidth": 480,
+                "paddingBottom": 8,
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <RCTScrollView
+            onContentSizeChange={[Function]}
+            scrollEnabled={true}
+            testID="modalScrollView"
+          >
+            <View>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "paddingBottom": 30,
+                      "textAlign": "center",
+                    },
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#161617",
+                        "fontFamily": "Montserrat-Regular",
+                        "fontSize": 15,
+                        "lineHeight": 20,
+                      },
+                    ]
+                  }
+                >
+                  Ton compte te permettra de retrouver tous tes favoris en un clin d'oeil !
+                </Text>
+              </Text>
+              <View
+                accessibilityLabel="S'inscrire"
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#eb0055",
+                    "borderRadius": 24,
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "maxWidth": 500,
+                    "minHeight": 40,
+                    "opacity": 1,
+                    "paddingBottom": 2,
+                    "paddingLeft": 2,
+                    "paddingRight": 2,
+                    "paddingTop": 2,
+                    "width": "100%",
+                  }
+                }
+                testID="S'inscrire"
+              >
+                <Text
+                  adjustsFontSizeToFit={false}
+                  numberOfLines={1}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#ffffff",
+                        "fontFamily": "Montserrat-Bold",
+                        "fontSize": 15,
+                        "lineHeight": 20,
+                        "marginLeft": 0,
+                        "maxWidth": "100%",
+                      },
+                    ]
+                  }
+                >
+                  S'inscrire
+                </Text>
+              </View>
+              <View
+                numberOfSpaces={3}
+                style={
+                  Array [
+                    Object {
+                      "height": 12,
+                    },
+                  ]
+                }
+              />
+              <View
+                accessibilityLabel="Se connecter"
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderRadius": 24,
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "maxWidth": 500,
+                    "minHeight": 40,
+                    "opacity": 1,
+                    "paddingBottom": 2,
+                    "paddingLeft": 2,
+                    "paddingRight": 2,
+                    "paddingTop": 2,
+                    "width": "100%",
+                  }
+                }
+                testID="Se connecter"
+              >
+                <Text
+                  adjustsFontSizeToFit={false}
+                  numberOfLines={1}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#eb0055",
+                        "fontFamily": "Montserrat-Bold",
+                        "fontSize": 15,
+                        "lineHeight": 20,
+                        "marginLeft": 0,
+                        "maxWidth": "100%",
+                      },
+                    ]
+                  }
+                >
+                  Se connecter
+                </Text>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+      </View>
+    </View>
+  </Modal>,
+]
+`;

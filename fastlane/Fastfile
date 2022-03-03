@@ -1,0 +1,117 @@
+fastlane_require 'dotenv'
+fastlane_require 'spaceship'
+release_notes_command = "git log HEAD --pretty=format:\"%s\" -1"
+
+import("FastfileConfig")
+import("FastfileCheck")
+import("FastfileEnvironment")
+import("FastfileIOSSigning")
+
+
+
+# iOS
+
+platform :ios do
+  before_all do
+    setup_circle_ci
+  end
+
+  lane :build do |options|
+    gym(
+      scheme: ENV['IOS_SCHEME'],
+      output_directory: "#{ENV['IOS_IPA_DIRECTORY']}",
+      output_name: "#{ENV['IOS_IPA_NAME']}",
+      silent: true,
+      export_method: ENV['EXPORT_METHOD'],
+      workspace: "#{ENV['IOS_PROJECT_PATH']}/PassCulture.xcworkspace")
+  end
+  release_notes = %x[#{release_notes_command}]
+  escaped_release_notes = release_notes.gsub("\"", "\\\"")
+
+  lane :deploy_appCenter do |options|
+    appcenter_upload(
+      api_token: ENV['IOS_APPCENTER_API_TOKEN'],
+      owner_name: ENV['APPCENTER_ORGANISATION'],
+      owner_type: "organization",
+      app_name: ENV['APPCENTER_IOS_APP_ID'],
+      ipa: "#{ENV['IOS_IPA_DIRECTORY']}/#{ENV['IOS_IPA_NAME']}",
+      release_notes: escaped_release_notes,
+      destinations: ENV['APPCENTER_DISTRIBUTE_GROUPS']
+    )
+  end
+
+  lane :deploy do |options|
+    if options[:codepush] then # @codepush
+      release_notes = %x[#{release_notes_command}]
+      escaped_release_notes = release_notes.gsub("\"", "\\\"")
+      sh "cd .. && yarn appcenter codepush release-react --token #{ENV['IOS_APPCENTER_API_TOKEN']} -d #{ENV['CODEPUSH_DEPLOYMENT_NAME']} -a #{ENV['APPCENTER_ORGANISATION']}/#{ENV['APPCENTER_IOS_APP_ID']} --target-binary-version \"#{ENV['VERSION']}\" --description \"#{escaped_release_notes}\" --disable-duplicate-release-error"
+    else
+      match(
+        shallow_clone: true,
+        clone_branch_directly: true,
+        readonly: true
+      )
+      build
+      if ENV['DEPLOYMENT_PLATFORM'] === 'appcenter' then
+        deploy_appCenter
+      else
+        pilot(
+          username: ENV['APPLE_ACCOUNT_USERNAME'],
+          distribute_external: false,
+          skip_waiting_for_build_processing: true,
+          apple_id: ENV['APPLE_APP_ID']
+        )
+      end
+    end
+  end
+
+end
+
+#  Android
+
+platform :android do
+  lane :build do |options|
+    gradle(
+      task: ENV['ANDROID_GRADLE_TASK'],
+      project_dir: ENV['ANDROID_PROJECT_DIR']
+    )
+  end
+  private_lane :deploy_playStore do |options|
+    UI.important("env: #{options[:env]}")
+    supply(
+      package_name: ENV['ANDROID_APP_ID'],
+      aab: "android/app/build/outputs/bundle/productionRelease/app-production-release.aab",
+      skip_upload_metadata: true, 
+      skip_upload_apk: true,
+      skip_upload_images: true, 
+      skip_upload_screenshots: true
+    )
+  end
+  lane :deploy_appCenter do |options|
+    appcenter_upload(
+      api_token: ENV['ANDROID_APPCENTER_API_TOKEN'],
+      owner_name: ENV['APPCENTER_ORGANISATION'],
+      owner_type: "organization",
+      app_name: ENV['APPCENTER_ANDROID_APP_ID'],
+      file: ENV["ANDROID_FILE_PATH"],
+      release_notes: %x[#{release_notes_command}],
+      destinations: ENV['APPCENTER_DISTRIBUTE_GROUPS']
+    )
+  end
+
+  lane :deploy do |options|
+    if options[:codepush] then # @codepush
+      release_notes = %x[#{release_notes_command}]
+      escaped_release_notes = release_notes.gsub("\"", "\\\"")
+      sh "cd .. && yarn appcenter codepush release-react --token #{ENV['ANDROID_APPCENTER_API_TOKEN']} -d #{ENV['CODEPUSH_DEPLOYMENT_NAME']} -a #{ENV['APPCENTER_ORGANISATION']}/#{ENV['APPCENTER_ANDROID_APP_ID']} --target-binary-version \"#{ENV['VERSION']}\" --description \"#{escaped_release_notes}\" --disable-duplicate-release-error"
+    else
+      build
+      if ENV['DEPLOYMENT_PLATFORM'] === 'appcenter' then
+        deploy_appCenter
+      elsif ENV['DEPLOYMENT_PLATFORM'] === 'store' then
+        deploy_playStore
+      end
+    end
+  end
+
+end

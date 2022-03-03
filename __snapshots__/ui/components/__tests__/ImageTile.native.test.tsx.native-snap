@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ImageTile/> should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Array [
+        Object {
+          "backgroundColor": "#F1F1F4",
+        },
+        Object {
+          "borderTopLeftRadius": 8,
+          "borderTopRightRadius": 8,
+          "height": 100,
+          "width": 100,
+        },
+      ],
+    ]
+  }
+>
+  <FastImageView
+    resizeMode="cover"
+    source={
+      Object {
+        "uri": "uri_thumb_url",
+      }
+    }
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    testID="tileImage"
+  />
+</View>
+`;

@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OfferIconCaptions /> should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <View
+    numberOfSpaces={6}
+    style={
+      Array [
+        Object {
+          "width": 24,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  >
+    <View
+      className="sc-jRQBWg hQOyeA"
+    >
+      <View
+        height={32}
+        width={32}
+      >
+        <Text>
+          undefined-SVG-Mock
+        </Text>
+      </View>
+    </View>
+    <View
+      numberOfSpaces={2}
+      style={
+        Array [
+          Object {
+            "height": 8,
+          },
+        ]
+      }
+    />
+    <Text
+      className="sc-gKclnd AqbsW"
+      testID="caption-undefined"
+    >
+      Abonnements concerts
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "#CBCDD2",
+          "height": "92%",
+          "marginHorizontal": 8,
+          "width": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  >
+    <View
+      className="sc-jRQBWg hQOyeA"
+    >
+      <View
+        fill="#696A6F"
+        height={32}
+        testID="iconPrice"
+        width={32}
+      >
+        <Text>
+          iconPrice-SVG-Mock
+        </Text>
+      </View>
+    </View>
+    <View
+      numberOfSpaces={2}
+      style={
+        Array [
+          Object {
+            "height": 8,
+          },
+        ]
+      }
+    />
+    <Text
+      className="sc-gKclnd AqbsW"
+      testID="caption-iconPrice"
+    >
+      28 €
+    </Text>
+  </View>
+  <View
+    numberOfSpaces={6}
+    style={
+      Array [
+        Object {
+          "width": 24,
+        },
+      ]
+    }
+  />
+</View>
+`;

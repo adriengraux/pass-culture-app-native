@@ -1,0 +1,610 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForceUpdate display logic should display force update page when global variable is set 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body
+    tabindex="-1"
+  >
+    <div>
+      <nav
+        class="sc-kfPuZi gmQQZa"
+      >
+        <div
+          class="css-view-1dbjc4n"
+          style="align-items: center; background-color: rgba(255, 255, 255, 0.97); border-top-color: rgba(241,241,244,1.00); border-right-color: rgba(241,241,244,1.00); border-bottom-color: rgba(241,241,244,1.00); border-left-color: rgba(241,241,244,1.00); border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; bottom: 0px; box-shadow: 0px 1px 4px rgba(22,22,23,0.20); position: absolute; width: 100%;"
+        >
+          <div
+            class="css-view-1dbjc4n"
+            style="flex-direction: row; width: 100%;"
+          >
+            <div
+              class="css-view-1dbjc4n"
+              style="width: 16px;"
+            />
+            <ul
+              class="sc-jrQzAO sc-fKVqWL coApC fMzrSP"
+            >
+              <li
+                class="sc-bBHxTw iVhJOD"
+              >
+                <a
+                  class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="/Home"
+                  role="link"
+                  style="cursor: pointer;"
+                  tabindex="-1"
+                >
+                  <div
+                    aria-label="Accueil"
+                    class="css-view-1dbjc4n"
+                    data-testid="Home tab"
+                    style="align-items: center; cursor: pointer; display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1; height: 64px; transition-duration: 0s; transition-property: opacity; user-select: none;"
+                    tabindex="0"
+                  >
+                    <div
+                      class="css-view-1dbjc4n"
+                      data-testid="Home tab selected"
+                      style="display: inline-flex;"
+                    >
+                      <span
+                        class="css-text-901oao css-textHasAncestor-16my406"
+                      >
+                        Home tab selected-SVG-Mock
+                      </span>
+                    </div>
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                    />
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex;"
+                    >
+                      <span
+                        class="css-text-901oao css-textHasAncestor-16my406"
+                      >
+                        undefined-SVG-Mock
+                      </span>
+                    </div>
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                    />
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex; height: 4px;"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li
+                class="sc-bBHxTw iVhJOD"
+              >
+                <a
+                  class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="/Search"
+                  role="link"
+                  style="cursor: pointer;"
+                  tabindex="-1"
+                >
+                  <div
+                    aria-label="Rechercher des offres"
+                    class="css-view-1dbjc4n"
+                    data-testid="Search tab"
+                    style="align-items: center; cursor: pointer; display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1; height: 64px; transition-duration: 0s; transition-property: opacity; user-select: none;"
+                    tabindex="0"
+                  >
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                    />
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex;"
+                    >
+                      <span
+                        class="css-text-901oao css-textHasAncestor-16my406"
+                      >
+                        undefined-SVG-Mock
+                      </span>
+                    </div>
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li
+                class="sc-bBHxTw iVhJOD"
+              >
+                <a
+                  class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="/Bookings"
+                  role="link"
+                  style="cursor: pointer;"
+                  tabindex="-1"
+                >
+                  <div
+                    aria-label="Mes réservations"
+                    class="css-view-1dbjc4n"
+                    data-testid="Bookings tab"
+                    style="align-items: center; cursor: pointer; display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1; height: 64px; transition-duration: 0s; transition-property: opacity; user-select: none;"
+                    tabindex="0"
+                  >
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                    />
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex;"
+                    >
+                      <span
+                        class="css-text-901oao css-textHasAncestor-16my406"
+                      >
+                        undefined-SVG-Mock
+                      </span>
+                    </div>
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li
+                class="sc-bBHxTw iVhJOD"
+              >
+                <a
+                  class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="/Favorites"
+                  role="link"
+                  style="cursor: pointer;"
+                  tabindex="-1"
+                >
+                  <div
+                    aria-label="Mes favoris"
+                    class="css-view-1dbjc4n"
+                    data-testid="Favorites tab"
+                    style="align-items: center; cursor: pointer; display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1; height: 64px; transition-duration: 0s; transition-property: opacity; user-select: none;"
+                    tabindex="0"
+                  >
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                    />
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex;"
+                    >
+                      <span
+                        class="css-text-901oao css-textHasAncestor-16my406"
+                      >
+                        undefined-SVG-Mock
+                      </span>
+                    </div>
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li
+                class="sc-bBHxTw iVhJOD"
+              >
+                <a
+                  class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="/Profile"
+                  role="link"
+                  style="cursor: pointer;"
+                  tabindex="-1"
+                >
+                  <div
+                    aria-label="Mon profil"
+                    class="css-view-1dbjc4n"
+                    data-testid="Profile tab"
+                    style="align-items: center; cursor: pointer; display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1; height: 64px; transition-duration: 0s; transition-property: opacity; user-select: none;"
+                    tabindex="0"
+                  >
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                    />
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex;"
+                    >
+                      <span
+                        class="css-text-901oao css-textHasAncestor-16my406"
+                      >
+                        undefined-SVG-Mock
+                      </span>
+                    </div>
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div
+              class="css-view-1dbjc4n"
+              style="width: 16px;"
+            />
+          </div>
+          <div
+            class="css-view-1dbjc4n"
+            style="height: 8px;"
+          />
+        </div>
+      </nav>
+      <main
+        class="sc-gKclnd cXxSnW"
+      >
+        <div
+          class="css-view-1dbjc4n"
+          style="flex-basis: 0px; flex-grow: 1; flex-shrink: 1; margin: auto auto auto auto; width: 100%;"
+        >
+          <div
+            class="css-view-1dbjc4n"
+            style="flex-basis: 0px; flex-grow: 1; flex-shrink: 1; margin: auto auto auto auto; max-width: 960px; width: 100%;"
+          >
+            <div
+              class="css-view-1dbjc4n"
+            />
+          </div>
+          <div
+            class="css-view-1dbjc4n"
+            style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%; z-index: -1;"
+          >
+            <div
+              class="css-view-1dbjc4n"
+            >
+              <div
+                class="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <nav
+      class="sc-kfPuZi gmQQZa"
+    >
+      <div
+        class="css-view-1dbjc4n"
+        style="align-items: center; background-color: rgba(255, 255, 255, 0.97); border-top-color: rgba(241,241,244,1.00); border-right-color: rgba(241,241,244,1.00); border-bottom-color: rgba(241,241,244,1.00); border-left-color: rgba(241,241,244,1.00); border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; bottom: 0px; box-shadow: 0px 1px 4px rgba(22,22,23,0.20); position: absolute; width: 100%;"
+      >
+        <div
+          class="css-view-1dbjc4n"
+          style="flex-direction: row; width: 100%;"
+        >
+          <div
+            class="css-view-1dbjc4n"
+            style="width: 16px;"
+          />
+          <ul
+            class="sc-jrQzAO sc-fKVqWL coApC fMzrSP"
+          >
+            <li
+              class="sc-bBHxTw iVhJOD"
+            >
+              <a
+                class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                dir="auto"
+                href="/Home"
+                role="link"
+                style="cursor: pointer;"
+                tabindex="-1"
+              >
+                <div
+                  aria-label="Accueil"
+                  class="css-view-1dbjc4n"
+                  data-testid="Home tab"
+                  style="align-items: center; cursor: pointer; display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1; height: 64px; transition-duration: 0s; transition-property: opacity; user-select: none;"
+                  tabindex="0"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                    data-testid="Home tab selected"
+                    style="display: inline-flex;"
+                  >
+                    <span
+                      class="css-text-901oao css-textHasAncestor-16my406"
+                    >
+                      Home tab selected-SVG-Mock
+                    </span>
+                  </div>
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                  />
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex;"
+                  >
+                    <span
+                      class="css-text-901oao css-textHasAncestor-16my406"
+                    >
+                      undefined-SVG-Mock
+                    </span>
+                  </div>
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                  />
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex; height: 4px;"
+                  />
+                </div>
+              </a>
+            </li>
+            <li
+              class="sc-bBHxTw iVhJOD"
+            >
+              <a
+                class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                dir="auto"
+                href="/Search"
+                role="link"
+                style="cursor: pointer;"
+                tabindex="-1"
+              >
+                <div
+                  aria-label="Rechercher des offres"
+                  class="css-view-1dbjc4n"
+                  data-testid="Search tab"
+                  style="align-items: center; cursor: pointer; display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1; height: 64px; transition-duration: 0s; transition-property: opacity; user-select: none;"
+                  tabindex="0"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                  />
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex;"
+                  >
+                    <span
+                      class="css-text-901oao css-textHasAncestor-16my406"
+                    >
+                      undefined-SVG-Mock
+                    </span>
+                  </div>
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                  />
+                </div>
+              </a>
+            </li>
+            <li
+              class="sc-bBHxTw iVhJOD"
+            >
+              <a
+                class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                dir="auto"
+                href="/Bookings"
+                role="link"
+                style="cursor: pointer;"
+                tabindex="-1"
+              >
+                <div
+                  aria-label="Mes réservations"
+                  class="css-view-1dbjc4n"
+                  data-testid="Bookings tab"
+                  style="align-items: center; cursor: pointer; display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1; height: 64px; transition-duration: 0s; transition-property: opacity; user-select: none;"
+                  tabindex="0"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                  />
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex;"
+                  >
+                    <span
+                      class="css-text-901oao css-textHasAncestor-16my406"
+                    >
+                      undefined-SVG-Mock
+                    </span>
+                  </div>
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                  />
+                </div>
+              </a>
+            </li>
+            <li
+              class="sc-bBHxTw iVhJOD"
+            >
+              <a
+                class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                dir="auto"
+                href="/Favorites"
+                role="link"
+                style="cursor: pointer;"
+                tabindex="-1"
+              >
+                <div
+                  aria-label="Mes favoris"
+                  class="css-view-1dbjc4n"
+                  data-testid="Favorites tab"
+                  style="align-items: center; cursor: pointer; display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1; height: 64px; transition-duration: 0s; transition-property: opacity; user-select: none;"
+                  tabindex="0"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                  />
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex;"
+                  >
+                    <span
+                      class="css-text-901oao css-textHasAncestor-16my406"
+                    >
+                      undefined-SVG-Mock
+                    </span>
+                  </div>
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                  />
+                </div>
+              </a>
+            </li>
+            <li
+              class="sc-bBHxTw iVhJOD"
+            >
+              <a
+                class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                dir="auto"
+                href="/Profile"
+                role="link"
+                style="cursor: pointer;"
+                tabindex="-1"
+              >
+                <div
+                  aria-label="Mon profil"
+                  class="css-view-1dbjc4n"
+                  data-testid="Profile tab"
+                  style="align-items: center; cursor: pointer; display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1; height: 64px; transition-duration: 0s; transition-property: opacity; user-select: none;"
+                  tabindex="0"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                  />
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex;"
+                  >
+                    <span
+                      class="css-text-901oao css-textHasAncestor-16my406"
+                    >
+                      undefined-SVG-Mock
+                    </span>
+                  </div>
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="display: inline-flex; flex-basis: 0px; flex-grow: 1; flex-shrink: 1;"
+                  />
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div
+            class="css-view-1dbjc4n"
+            style="width: 16px;"
+          />
+        </div>
+        <div
+          class="css-view-1dbjc4n"
+          style="height: 8px;"
+        />
+      </div>
+    </nav>
+    <main
+      class="sc-gKclnd cXxSnW"
+    >
+      <div
+        class="css-view-1dbjc4n"
+        style="flex-basis: 0px; flex-grow: 1; flex-shrink: 1; margin: auto auto auto auto; width: 100%;"
+      >
+        <div
+          class="css-view-1dbjc4n"
+          style="flex-basis: 0px; flex-grow: 1; flex-shrink: 1; margin: auto auto auto auto; max-width: 960px; width: 100%;"
+        >
+          <div
+            class="css-view-1dbjc4n"
+          />
+        </div>
+        <div
+          class="css-view-1dbjc4n"
+          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%; z-index: -1;"
+        >
+          <div
+            class="css-view-1dbjc4n"
+          >
+            <div
+              class="css-text-901oao"
+              dir="auto"
+            >
+              undefined-SVG-Mock
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -1,0 +1,1683 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories component should match diff snapshot when new category is selected 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -323,11 +323,11 @@
+                className=\\"css-text-901oao css-textMultiLine-cens5h\\"
+                dir=\\"auto\\"
+                style={
+                  Object {
+                    \\"WebkitLineClamp\\": 2,
+-                   \\"color\\": \\"rgba(22,22,23,1.00)\\",
++                   \\"color\\": \\"rgba(235,0,85,1.00)\\",
+                    \\"fontFamily\\": \\"Montserrat-Bold\\",
+                    \\"fontSize\\": \\"15px\\",
+                    \\"lineHeight\\": \\"20px\\",
+                  }
+                }
+@@ -349,10 +349,20 @@
+                    \\"msFlexPositive\\": 1,
+                    \\"msFlexPreferredSize\\": \\"0px\\",
+                  }
+                }
+              />
++             <div
++               className=\\"css-view-1dbjc4n\\"
++             >
++               <div
++                 className=\\"css-text-901oao\\"
++                 dir=\\"auto\\"
++               >
++                 undefined-SVG-Mock
++               </div>
++             </div>
+            </div>
+          </li>
+          <li>
+            <div
+              className=\\"css-view-1dbjc4n\\"
+@@ -513,11 +523,11 @@
+                className=\\"css-text-901oao css-textMultiLine-cens5h\\"
+                dir=\\"auto\\"
+                style={
+                  Object {
+                    \\"WebkitLineClamp\\": 2,
+-                   \\"color\\": \\"rgba(235,0,85,1.00)\\",
++                   \\"color\\": \\"rgba(22,22,23,1.00)\\",
+                    \\"fontFamily\\": \\"Montserrat-Bold\\",
+                    \\"fontSize\\": \\"15px\\",
+                    \\"lineHeight\\": \\"20px\\",
+                  }
+                }
+@@ -539,20 +549,10 @@
+                    \\"msFlexPositive\\": 1,
+                    \\"msFlexPreferredSize\\": \\"0px\\",
+                  }
+                }
+              />
+-             <div
+-               className=\\"css-view-1dbjc4n\\"
+-             >
+-               <div
+-                 className=\\"css-text-901oao\\"
+-                 dir=\\"auto\\"
+-               >
+-                 undefined-SVG-Mock
+-               </div>
+-             </div>
+            </div>
+          </li>
+          <li>
+            <div
+              className=\\"css-view-1dbjc4n\\""
+`;
+
+exports[`Categories component should render correctly 1`] = `
+<div
+  className="css-view-1dbjc4n"
+  style={
+    Object {
+      "WebkitBoxFlex": 1,
+      "WebkitFlexBasis": "0px",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "backgroundColor": "rgba(255,255,255,1.00)",
+      "flexBasis": "0px",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0px",
+    }
+  }
+>
+  <header
+    className="sc-bdvvtL dEiHBQ"
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "backgroundColor": "rgba(235,0,85,1.00)",
+          "position": "absolute",
+          "top": "0px",
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "height": "16px",
+          }
+        }
+      />
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "height": "8px",
+          }
+        }
+      />
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "WebkitAlignItems": "center",
+            "WebkitBoxAlign": "center",
+            "WebkitBoxDirection": "normal",
+            "WebkitBoxOrient": "horizontal",
+            "WebkitBoxPack": "justify",
+            "WebkitFlexDirection": "row",
+            "WebkitJustifyContent": "space-between",
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "msFlexAlign": "center",
+            "msFlexDirection": "row",
+            "msFlexPack": "justify",
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+          style={
+            Object {
+              "WebkitAlignItems": "center",
+              "WebkitBoxAlign": "center",
+              "WebkitBoxDirection": "normal",
+              "WebkitBoxFlex": 1,
+              "WebkitBoxOrient": "horizontal",
+              "WebkitBoxPack": "start",
+              "WebkitFlexBasis": "0px",
+              "WebkitFlexDirection": "row",
+              "WebkitFlexGrow": 1,
+              "WebkitFlexShrink": 1,
+              "WebkitJustifyContent": "flex-start",
+              "alignItems": "center",
+              "flexBasis": "0px",
+              "flexDirection": "row",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "flex-start",
+              "msFlexAlign": "center",
+              "msFlexDirection": "row",
+              "msFlexNegative": 1,
+              "msFlexPack": "start",
+              "msFlexPositive": 1,
+              "msFlexPreferredSize": "0px",
+              "paddingLeft": "12px",
+              "paddingRight": "12px",
+            }
+          }
+        >
+          <div
+            aria-label="Revenir en arrière"
+            className="css-view-1dbjc4n"
+            data-testid="Revenir en arrière"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "cursor": "pointer",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              data-testid="icon-back"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                icon-back-SVG-Mock
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1
+          aria-level={1}
+          className="css-reset-4rbku5 css-text-901oao css-textMultiLine-cens5h"
+          dir="auto"
+          role="heading"
+          style={
+            Object {
+              "WebkitLineClamp": 1,
+              "color": "rgba(255,255,255,1.00)",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": "15px",
+              "lineHeight": "20px",
+              "textAlign": "center",
+            }
+          }
+        >
+          Catégories
+        </h1>
+        <div
+          className="css-view-1dbjc4n"
+          style={
+            Object {
+              "WebkitAlignItems": "center",
+              "WebkitBoxAlign": "center",
+              "WebkitBoxDirection": "normal",
+              "WebkitBoxFlex": 1,
+              "WebkitBoxOrient": "horizontal",
+              "WebkitBoxPack": "end",
+              "WebkitFlexBasis": "0px",
+              "WebkitFlexDirection": "row",
+              "WebkitFlexGrow": 1,
+              "WebkitFlexShrink": 1,
+              "WebkitJustifyContent": "flex-end",
+              "alignItems": "center",
+              "flexBasis": "0px",
+              "flexDirection": "row",
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "flex-end",
+              "msFlexAlign": "center",
+              "msFlexDirection": "row",
+              "msFlexNegative": 1,
+              "msFlexPack": "end",
+              "msFlexPositive": 1,
+              "msFlexPreferredSize": "0px",
+              "paddingLeft": "12px",
+              "paddingRight": "12px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "height": "8px",
+          }
+        }
+      />
+    </div>
+  </header>
+  <div
+    className="css-view-1dbjc4n"
+    onScroll={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    onWheel={[Function]}
+    style={
+      Object {
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxFlex": 1,
+        "WebkitBoxOrient": "vertical",
+        "WebkitFlexDirection": "column",
+        "WebkitFlexGrow": 1,
+        "WebkitFlexShrink": 1,
+        "WebkitOverflowScrolling": "touch",
+        "WebkitTransform": "translateZ(0px)",
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "msFlexDirection": "column",
+        "msFlexNegative": 1,
+        "msFlexPositive": 1,
+        "overflowX": "hidden",
+        "overflowY": "auto",
+        "transform": "translateZ(0px)",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 1,
+          "WebkitFlexGrow": 1,
+          "flexGrow": 1,
+          "marginRight": "24px",
+          "msFlexPositive": 1,
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "height": "16px",
+          }
+        }
+      />
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "height": "64px",
+          }
+        }
+      />
+      <ul
+        className="sc-gsDKAQ sc-dkPtRN bwGBFc ezyhIk"
+      >
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="NONE"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(235,0,85,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Toutes les catégories
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="CARTE_JEUNES"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Carte jeunes
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="CINEMA"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Cinéma
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="VISITE"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Visites, expositions
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="MUSIQUE"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Musique
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="SPECTACLE"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Spectacles
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="COURS"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Cours, ateliers
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="LIVRE"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Livre
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="FILM"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Films, séries
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="PRESSE"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Presse, médias
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="JEU"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Jeux
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="CONFERENCE"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Conférences, rencontres
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="INSTRUMENT"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Instruments de musique
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="css-view-1dbjc4n"
+            data-testid="MATERIEL"
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozTransitionProperty": "opacity",
+                "MozUserSelect": "none",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "WebkitTransitionDuration": "0s",
+                "WebkitTransitionProperty": "opacity",
+                "WebkitUserSelect": "none",
+                "alignItems": "center",
+                "cursor": "pointer",
+                "flexDirection": "row",
+                "marginBottom": "24px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msTouchAction": "manipulation",
+                "msUserSelect": "none",
+                "touchAction": "manipulation",
+                "transitionDuration": "0s",
+                "transitionProperty": "opacity",
+                "userSelect": "none",
+              }
+            }
+            tabIndex="0"
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-text-901oao"
+                dir="auto"
+              >
+                undefined-SVG-Mock
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "width": "16px",
+                }
+              }
+            />
+            <div
+              className="css-text-901oao css-textMultiLine-cens5h"
+              dir="auto"
+              style={
+                Object {
+                  "WebkitLineClamp": 2,
+                  "color": "rgba(22,22,23,1.00)",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": "15px",
+                  "lineHeight": "20px",
+                }
+              }
+            >
+              Beaux-Arts
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxFlex": 1,
+                  "WebkitFlexBasis": "0px",
+                  "WebkitFlexGrow": 1,
+                  "WebkitFlexShrink": 1,
+                  "flexBasis": "0px",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "msFlexNegative": 1,
+                  "msFlexPositive": 1,
+                  "msFlexPreferredSize": "0px",
+                }
+              }
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

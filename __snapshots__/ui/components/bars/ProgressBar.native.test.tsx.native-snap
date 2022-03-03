@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar should render properly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": 40,
+        "maxHeight": 40,
+      },
+    ]
+  }
+>
+  <View
+    backgroundColor="#eb0055"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#eb0055",
+          "borderRadius": 32,
+          "height": 32,
+          "justifyContent": "center",
+          "position": "absolute",
+          "width": 32,
+          "zIndex": 2,
+        },
+      ]
+    }
+  >
+    <View
+      height={20}
+      testID="progress-bar-icon"
+      width={20}
+    >
+      <Text>
+        progress-bar-icon-SVG-Mock
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderColor": "#CBCDD2",
+          "borderRadius": 20,
+          "borderWidth": 2,
+          "flexBasis": 0,
+          "flexDirection": "row",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "height": 20,
+          "marginLeft": 20,
+          "overflow": "hidden",
+          "position": "relative",
+          "zIndex": 1,
+        },
+      ]
+    }
+  >
+    <View
+      backgroundColor="#eb0055"
+      barWidth={0}
+      collapsable={false}
+      forwardedRef={[Function]}
+      isAnimated={false}
+      nativeID="animatedComponent"
+      onLayout={[Function]}
+      progress={0.5}
+      style={
+        Object {
+          "backgroundColor": "#eb0055",
+          "flexBasis": 0,
+          "flexGrow": 0.5,
+          "flexShrink": 1,
+          "left": 0,
+          "opacity": 1,
+          "position": "relative",
+        }
+      }
+      testID="progress-bar"
+    />
+  </View>
+</View>
+`;

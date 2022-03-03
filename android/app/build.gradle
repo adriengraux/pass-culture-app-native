@@ -1,0 +1,329 @@
+// Template last updated for 0.60.3
+
+apply plugin: "com.android.application"
+apply plugin: "com.google.firebase.firebase-perf"
+
+// @react-native-config
+project.ext.envConfigFiles = [
+        apptestingdebug: ".env.testing",
+        apptestingrelease: ".env.testing",
+        developmentdebug: ".env.development",
+        stagingdebug: ".env.staging",
+        stagingrelease: ".env.staging",
+        productiondebug: ".env.production",
+        productionrelease: ".env.production",
+        "": ".env.testing",                         // Default (must be the last in the list so as not to override others)
+]
+apply from: project(':bam.tech_react-native-config').projectDir.getPath() + "/dotenv.gradle"
+
+import com.android.build.OutputFile
+// Allows to read json (ie: package.json)
+import groovy.json.JsonSlurper
+def packageSlurper = new JsonSlurper()
+
+def packageJson = packageSlurper.parse file('../../package.json')
+/**
+ * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
+ * and bundleReleaseJsAndAssets).
+ * These basically call `react-native bundle` with the correct arguments during the Android build
+ * cycle. By default, bundleDebugJsAndAssets is skipped, as in debug/dev mode we prefer to load the
+ * bundle directly from the development server. Below you can see all the possible configurations
+ * and their defaults. If you decide to add a configuration block, make sure to add it before the
+ * `apply from: "../../node_modules/react-native/react.gradle"` line.
+ *
+ * project.ext.react = [
+ *   // the name of the generated asset file containing your JS bundle
+ *   bundleAssetName: "index.android.bundle",
+ *
+ *   // the entry file for bundle generation. If none specified and
+ *   // "index.android.js" exists, it will be used. Otherwise "index.js" is
+ *   // default. Can be overridden with ENTRY_FILE environment variable.
+ *
+ *   // https://reactnative.dev/docs/performance#enable-the-ram-format
+ *   bundleCommand: "ram-bundle",
+ *
+ *   // whether to use same config as release in another build variant
+ *   // This includes bundleInBeta and devDisabledInBeta
+ *   useReleaseConfigInBeta: false,
+ *
+ *   // whether to bundle JS and assets in debug mode
+ *   bundleInDebug: false,
+ *
+ *   // whether to bundle JS and assets in release mode
+ *   bundleInRelease: true,
+ *
+ *   // whether to bundle JS and assets in another build variant (if configured).
+ *   // See http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Build-Variants
+ *   // The configuration property can be in the following formats
+ *   //         'bundleIn${productFlavor}${buildType}'
+ *   //         'bundleIn${buildType}'
+ *   // bundleInFreeDebug: true,
+ *   // bundleInPaidRelease: true,
+ *   // bundleInBeta: true,
+ *
+ *   // whether to disable dev mode in custom build variants (by default only disabled in release)
+ *   // for example: to disable dev mode in the staging build type (if configured)
+ *   devDisabledInStaging: true,
+ *   // The configuration property can be in the following formats
+ *   //         'devDisabledIn${productFlavor}${buildType}'
+ *   //         'devDisabledIn${buildType}'
+ *
+ *   // the root of your project, i.e. where "package.json" lives
+ *   root: "../../",
+ *
+ *   // where to put the JS bundle asset in debug mode
+ *   jsBundleDirDebug: "$buildDir/intermediates/assets/debug",
+ *
+ *   // where to put the JS bundle asset in release mode
+ *   jsBundleDirRelease: "$buildDir/intermediates/assets/release",
+ *
+ *   // where to put drawable resources / React Native assets, e.g. the ones you use via
+ *   // require('./image.png')), in debug mode
+ *   resourcesDirDebug: "$buildDir/intermediates/res/merged/debug",
+ *
+ *   // where to put drawable resources / React Native assets, e.g. the ones you use via
+ *   // require('./image.png')), in release mode
+ *   resourcesDirRelease: "$buildDir/intermediates/res/merged/release",
+ *
+ *   // by default the gradle tasks are skipped if none of the JS files or assets change; this means
+ *   // that we don't look at files in android/ or ios/ to determine whether the tasks are up to
+ *   // date; if you have any other folders that you want to ignore for performance reasons (gradle
+ *   // indexes the entire tree), add them here. Alternatively, if you have JS files in android/
+ *   // for example, you might want to remove it from here.
+ *   inputExcludes: ["android/**", "ios/**"],
+ *
+ *   // override which node gets called and with what additional arguments
+ *   nodeExecutableAndArgs: ["node"],
+ *
+ *   // supply additional arguments to the packager
+ *   extraPackagerArgs: []
+ * ]
+ */
+
+project.ext.react = [
+    enableHermes: true,  // clean and rebuild if changing
+]
+
+apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle" // @codepush
+
+/**
+ * Set this to true to create two separate APKs instead of one:
+ *   - An APK that only works on ARM devices
+ *   - An APK that only works on x86 devices
+ * The advantage is the size of the APK is reduced by about 4MB.
+ * Upload all the APKs to the Play Store and people will download
+ * the correct one based on the CPU architecture of their device.
+ */
+def enableSeparateBuildPerCPUArchitecture = false
+
+/**
+ * Run Proguard to shrink the Java bytecode in release builds.
+ */
+def enableProguardInReleaseBuilds = true
+
+/**
+ * The preferred build flavor of JavaScriptCore.
+ *
+ * For example, to use the international variant, you can use:
+ * `def jscFlavor = 'org.webkit:android-jsc-intl:+'`
+ *
+ * The international variant includes ICU i18n library and necessary data
+ * allowing to use e.g. `Date.toLocaleString` and `String.localeCompare` that
+ * give correct results when using with locales other than en-US.  Note that
+ * this variant is about 6MiB larger per architecture than default.
+ */
+def jscFlavor = 'org.webkit:android-jsc:+'
+
+/**
+ * Whether to enable the Hermes VM.
+ *
+ * This should be set on project.ext.react and mirrored here.  If it is not set
+ * on project.ext.react, JavaScript will not be compiled to Hermes Bytecode
+ * and the benefits of using Hermes will therefore be sharply reduced.
+ */
+def enableHermes = project.ext.react.get("enableHermes", false)
+
+/**
+ * Signing
+ *
+ * The app is signed with keystore located in the keystores/ folder.
+ * Keystores passwords are crypted with transcrypt and located in
+ * keystores/*.keystore.properties files.
+ */
+def keystorePropertiesFile = rootProject.file("keystores/${project.env.get("ENV")}.keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+/**
+ * Architectures to build native code for in debug.
+ */
+def nativeArchitectures = project.getProperties().get("reactNativeDebugArchitectures")
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId project.env.get("ANDROID_APP_ID")
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        resValue "string", "url_prefix", project.env.get("URL_PREFIX")
+        resValue "string", "app_name", project.env.get("APP_DISPLAY_NAME")
+        resValue "string", "build_config_package", "com.passculture" // @react-native-config
+        resValue "string", "BATCH_API_KEY", project.env.get("BATCH_API_KEY_ANDROID")
+        resValue "string", "WEBAPP_V2_DOMAIN", project.env.get("WEBAPP_V2_DOMAIN")
+        resValue "string", "EMAIL_PROVIDER_CUSTOM_DOMAIN", project.env.get("EMAIL_PROVIDER_CUSTOM_DOMAIN")
+        resValue "string", "CODE_PUSH_APK_BUILD_TIME", String.format("\"%d\"", System.currentTimeMillis())
+        versionCode (packageJson.build as Integer)
+        versionName packageJson.version
+        buildConfigField "String", "CODEPUSH_KEY", "\"${project.env.get("CODEPUSH_KEY_ANDROID")}\"" // @codepush
+        multiDexEnabled true
+        resConfigs "fr" // https://developer.android.com/studio/build/shrink-code#unused-alt-resources
+    }
+
+    // When building Android App Bundles, the splits block is ignored.
+    // We keep it for Appcenter as we build apk for it.
+    splits {
+        abi {
+            reset()
+            enable enableSeparateBuildPerCPUArchitecture
+            universalApk false // if we enable splits per abi, we need to set this to true for Appcenter
+            include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+        }
+    }
+
+    // Instead, use the bundle block to control which types of configuration APKs
+    // you want your app bundle to support. If all configurations are splitted,
+    // it's the same as if we don't include this piece of code, but we leave it for clarity.
+    bundle {
+        language {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+        density {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+        abi {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+    }
+
+    signingConfigs {
+        config {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile rootProject.file("keystores/${keystoreProperties['storeFile']}")
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    buildTypes {
+        debug {
+            if (nativeArchitectures) {
+                ndk {
+                    abiFilters nativeArchitectures.split(',')
+                }
+            }
+        }
+        release {
+            // Enables code shrinking, obfuscation, and optimization for only
+            // your project's release build type.
+            minifyEnabled enableProguardInReleaseBuilds
+
+            // Enables resource shrinking, which is performed by the
+            // Android Gradle plugin.
+            shrinkResources true
+
+            // Includes the default ProGuard rules files that are packaged with
+            // the Android Gradle plugin. To learn more, go to the section about
+            // R8 configuration files.
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.config
+
+            // https://developer.android.com/studio/build/shrink-code#android_gradle_plugin_version_41_or_later
+            ndk {
+                debugSymbolLevel "FULL"
+            }
+        }
+    }
+
+    flavorDimensions "environment"
+    productFlavors {
+        // ProductFlavors names can not start with 'test' https://android.googlesource.com/platform/tools/build/+/21b5320e57ba21f829ecbb4862cf0b9876e11778/gradle/src/main/groovy/com/android/build/gradle/AndroidPlugin.groovy#93
+        apptesting {
+            dimension "environment"
+        }
+        development {
+            dimension "environment"
+        }
+        staging {
+            dimension "environment"
+        }
+        production {
+            dimension "environment"
+        }
+    }
+    // applicationVariants are e.g. debug, release
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            // For each separate APK per architecture, set a unique version code as described here:
+            // https://developer.android.com/studio/build/configure-apk-splits.html
+            def versionCodes = ["armeabi-v7a": 1, "x86": 2, "arm64-v8a": 3, "x86_64": 4]
+            def abi = output.getFilter(OutputFile.ABI)
+            if (abi != null) {  // null for the universal-debug, universal-release variants
+                output.versionCodeOverride =
+                        versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    //noinspection GradleDynamicVersion
+    implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    // Flipper + plugins
+    debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}@aar") {
+        exclude group:'com.facebook.fbjni'
+    }
+    debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
+        exclude group:'com.facebook.flipper'
+        exclude group:'com.squareup.okhttp3', module:'okhttp'
+    }
+    debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
+        exclude group:'com.facebook.flipper'
+    }
+    // debugImplementation("com.facebook.flipper:flipper-leakcanary2-plugin:${FLIPPER_VERSION}") {
+    //     exclude group:'com.facebook.flipper'
+    // }
+    // debugImplementation("com.squareup.leakcanary:leakcanary-android:2.6")
+
+    implementation 'androidx.appcompat:appcompat:1.1.0-rc01' // @react-navigation
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02' // @react-navigation
+    if (enableHermes) {
+      def hermesPath = "../../node_modules/hermes-engine/android/"
+      debugImplementation files(hermesPath + "hermes-debug.aar")
+      releaseImplementation files(hermesPath + "hermes-release.aar")
+    } else {
+      implementation jscFlavor
+    }
+    implementation platform('com.google.firebase:firebase-bom:25.12.0') // firebase
+    implementation "com.google.firebase:firebase-messaging" // firebase - batch
+    implementation 'com.batch.android:firebase-dispatcher:2.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services' // firebase (batch)
+
+// Run this once to be able to run the application with BUCK
+// puts all compile dependencies into folder libs for BUCK to use
+task copyDownloadableDepsToLibs(type: Copy) {
+    from configurations.implementation
+    into 'libs'
+}
+
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
